@@ -24,7 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'my_node = my_package.my_node:main'
+            'my_node = my_package.my_node:main',
+            'talker = my_package.publisher_member_function:main',
         ],
     },
 )
