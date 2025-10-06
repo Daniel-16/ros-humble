@@ -1,0 +1,39 @@
+# ROS 2 build artifacts
+/build/
+/install/
+/log/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+
+# C++ build artifacts
+*.so
+*.a
+*.o
+*.d
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+
+# Editor and IDE specific files
+.vscode/
+.cproject
+.project
+.settings/
+
+# OS-specific files
+*~
+.DS_Store
+
+# Other generated files
+/src/ros2/ouster_example/ouster_viz/CTestTestfile.cmake
+/src/ros2/ouster_example/ouster_viz/cmake_install.cmake
+/src/ros2/teleop_twist_joy/CTestTestfile.cmake
+/src/ros2/teleop_twist_joy/cmake_install.cmake
+/src/ros2/teleop_twist_joy/Testing/
+/src/ros2/teleop_twist_joy/gtest/

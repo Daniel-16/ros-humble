@@ -1,0 +1,253 @@
+[0.000000] (-) TimerEvent: {}
+[0.000761] (examples_rclcpp_async_client) JobQueued: {'identifier': 'examples_rclcpp_async_client', 'dependencies': OrderedDict()}
+[0.001168] (examples_rclcpp_cbg_executor) JobQueued: {'identifier': 'examples_rclcpp_cbg_executor', 'dependencies': OrderedDict()}
+[0.001286] (examples_rclcpp_minimal_action_client) JobQueued: {'identifier': 'examples_rclcpp_minimal_action_client', 'dependencies': OrderedDict()}
+[0.001426] (examples_rclcpp_minimal_action_server) JobQueued: {'identifier': 'examples_rclcpp_minimal_action_server', 'dependencies': OrderedDict()}
+[0.001480] (examples_rclcpp_minimal_client) JobQueued: {'identifier': 'examples_rclcpp_minimal_client', 'dependencies': OrderedDict()}
+[0.001579] (examples_rclcpp_minimal_composition) JobQueued: {'identifier': 'examples_rclcpp_minimal_composition', 'dependencies': OrderedDict()}
+[0.001631] (examples_rclcpp_minimal_publisher) JobQueued: {'identifier': 'examples_rclcpp_minimal_publisher', 'dependencies': OrderedDict()}
+[0.001685] (examples_rclcpp_minimal_service) JobQueued: {'identifier': 'examples_rclcpp_minimal_service', 'dependencies': OrderedDict()}
+[0.001732] (examples_rclcpp_minimal_subscriber) JobQueued: {'identifier': 'examples_rclcpp_minimal_subscriber', 'dependencies': OrderedDict()}
+[0.001780] (examples_rclcpp_minimal_timer) JobQueued: {'identifier': 'examples_rclcpp_minimal_timer', 'dependencies': OrderedDict()}
+[0.001850] (examples_rclcpp_multithreaded_executor) JobQueued: {'identifier': 'examples_rclcpp_multithreaded_executor', 'dependencies': OrderedDict()}
+[0.001897] (examples_rclcpp_wait_set) JobQueued: {'identifier': 'examples_rclcpp_wait_set', 'dependencies': OrderedDict()}
+[0.001943] (examples_rclpy_executors) JobQueued: {'identifier': 'examples_rclpy_executors', 'dependencies': OrderedDict()}
+[0.002006] (examples_rclpy_guard_conditions) JobQueued: {'identifier': 'examples_rclpy_guard_conditions', 'dependencies': OrderedDict()}
+[0.002056] (examples_rclpy_minimal_action_client) JobQueued: {'identifier': 'examples_rclpy_minimal_action_client', 'dependencies': OrderedDict()}
+[0.002101] (examples_rclpy_minimal_action_server) JobQueued: {'identifier': 'examples_rclpy_minimal_action_server', 'dependencies': OrderedDict()}
+[0.002148] (examples_rclpy_minimal_client) JobQueued: {'identifier': 'examples_rclpy_minimal_client', 'dependencies': OrderedDict()}
+[0.002203] (examples_rclpy_minimal_publisher) JobQueued: {'identifier': 'examples_rclpy_minimal_publisher', 'dependencies': OrderedDict()}
+[0.002256] (examples_rclpy_minimal_service) JobQueued: {'identifier': 'examples_rclpy_minimal_service', 'dependencies': OrderedDict()}
+[0.002338] (examples_rclpy_minimal_subscriber) JobQueued: {'identifier': 'examples_rclpy_minimal_subscriber', 'dependencies': OrderedDict()}
+[0.002639] (examples_rclpy_pointcloud_publisher) JobQueued: {'identifier': 'examples_rclpy_pointcloud_publisher', 'dependencies': OrderedDict()}
+[0.002690] (launch_testing_examples) JobQueued: {'identifier': 'launch_testing_examples', 'dependencies': OrderedDict()}
+[0.002781] (examples_rclcpp_async_client) JobStarted: {'identifier': 'examples_rclcpp_async_client'}
+[0.017637] (examples_rclcpp_cbg_executor) JobStarted: {'identifier': 'examples_rclcpp_cbg_executor'}
+[0.025289] (examples_rclcpp_minimal_action_client) JobStarted: {'identifier': 'examples_rclcpp_minimal_action_client'}
+[0.038250] (examples_rclcpp_minimal_action_server) JobStarted: {'identifier': 'examples_rclcpp_minimal_action_server'}
+[0.054281] (examples_rclcpp_async_client) JobProgress: {'identifier': 'examples_rclcpp_async_client', 'progress': 'cmake'}
+[0.054534] (examples_rclcpp_async_client) Command: {'cmd': ['/usr/bin/cmake', '/home/rosdev/ros2_ws/src/examples/rclcpp/services/async_client', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/rosdev/ros2_ws/src/install/examples_rclcpp_async_client'], 'cwd': '/home/rosdev/ros2_ws/src/build/examples_rclcpp_async_client', 'env': OrderedDict([('HOSTNAME', 'daniel-linux'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/extensions/git/dist/askpass.sh'), ('PIPX_HOME', '/usr/local/py-utils'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/bin/helpers/browser.sh'), ('HOME', '/home/rosdev'), ('OLDPWD', '/home/rosdev/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2dc4da92-7cae-4d44-bcf2-ebcfca9a7f7c.sock'), ('PIPX_BIN_DIR', '/usr/local/py-utils/bin'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_PATH', '/usr/local/python/current'), ('WAYLAND_DISPLAY', 'vscode-wayland-9e859e3a-4404-475c-adc2-6890627ba532.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/bin/remote-cli:/opt/ros/humble/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/rosdev/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock","/home/rosdev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-d4fb8d93b0.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rosdev/ros2_ws/src/build/examples_rclcpp_async_client'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.067823] (examples_rclcpp_cbg_executor) JobProgress: {'identifier': 'examples_rclcpp_cbg_executor', 'progress': 'cmake'}
+[0.072388] (examples_rclcpp_cbg_executor) Command: {'cmd': ['/usr/bin/cmake', '/home/rosdev/ros2_ws/src/examples/rclcpp/executors/cbg_executor', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/rosdev/ros2_ws/src/install/examples_rclcpp_cbg_executor'], 'cwd': '/home/rosdev/ros2_ws/src/build/examples_rclcpp_cbg_executor', 'env': OrderedDict([('HOSTNAME', 'daniel-linux'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/extensions/git/dist/askpass.sh'), ('PIPX_HOME', '/usr/local/py-utils'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/bin/helpers/browser.sh'), ('HOME', '/home/rosdev'), ('OLDPWD', '/home/rosdev/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2dc4da92-7cae-4d44-bcf2-ebcfca9a7f7c.sock'), ('PIPX_BIN_DIR', '/usr/local/py-utils/bin'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_PATH', '/usr/local/python/current'), ('WAYLAND_DISPLAY', 'vscode-wayland-9e859e3a-4404-475c-adc2-6890627ba532.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/bin/remote-cli:/opt/ros/humble/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/rosdev/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock","/home/rosdev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-d4fb8d93b0.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rosdev/ros2_ws/src/build/examples_rclcpp_cbg_executor'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.080484] (examples_rclcpp_minimal_action_client) JobProgress: {'identifier': 'examples_rclcpp_minimal_action_client', 'progress': 'cmake'}
+[0.080602] (examples_rclcpp_minimal_action_client) Command: {'cmd': ['/usr/bin/cmake', '/home/rosdev/ros2_ws/src/examples/rclcpp/actions/minimal_action_client', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/rosdev/ros2_ws/src/install/examples_rclcpp_minimal_action_client'], 'cwd': '/home/rosdev/ros2_ws/src/build/examples_rclcpp_minimal_action_client', 'env': OrderedDict([('HOSTNAME', 'daniel-linux'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/extensions/git/dist/askpass.sh'), ('PIPX_HOME', '/usr/local/py-utils'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/bin/helpers/browser.sh'), ('HOME', '/home/rosdev'), ('OLDPWD', '/home/rosdev/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2dc4da92-7cae-4d44-bcf2-ebcfca9a7f7c.sock'), ('PIPX_BIN_DIR', '/usr/local/py-utils/bin'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_PATH', '/usr/local/python/current'), ('WAYLAND_DISPLAY', 'vscode-wayland-9e859e3a-4404-475c-adc2-6890627ba532.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/bin/remote-cli:/opt/ros/humble/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/rosdev/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock","/home/rosdev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-d4fb8d93b0.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rosdev/ros2_ws/src/build/examples_rclcpp_minimal_action_client'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099480] (-) TimerEvent: {}
+[0.104113] (examples_rclcpp_minimal_action_server) JobProgress: {'identifier': 'examples_rclcpp_minimal_action_server', 'progress': 'cmake'}
+[0.105403] (examples_rclcpp_minimal_action_server) Command: {'cmd': ['/usr/bin/cmake', '/home/rosdev/ros2_ws/src/examples/rclcpp/actions/minimal_action_server', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/rosdev/ros2_ws/src/install/examples_rclcpp_minimal_action_server'], 'cwd': '/home/rosdev/ros2_ws/src/build/examples_rclcpp_minimal_action_server', 'env': OrderedDict([('HOSTNAME', 'daniel-linux'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/extensions/git/dist/askpass.sh'), ('PIPX_HOME', '/usr/local/py-utils'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/bin/helpers/browser.sh'), ('HOME', '/home/rosdev'), ('OLDPWD', '/home/rosdev/ros2_ws'), ('TERM_PROGRAM_VERSION', '1.104.2'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-2dc4da92-7cae-4d44-bcf2-ebcfca9a7f7c.sock'), ('PIPX_BIN_DIR', '/usr/local/py-utils/bin'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('PYTHON_PATH', '/usr/local/python/current'), ('WAYLAND_DISPLAY', 'vscode-wayland-9e859e3a-4404-475c-adc2-6890627ba532.sock'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/e3a5acfb517a443235981655413d566533107e92/bin/remote-cli:/opt/ros/humble/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/rosdev/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/vscode-ssh-auth-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock","/home/rosdev/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-d4fb8d93b0.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/tmp/vscode-ssh-auth-36f2ba0e-1197-4b7a-8964-f03afa6c9a28.sock'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/rosdev/ros2_ws/src/build/examples_rclcpp_minimal_action_server'), ('LC_ALL', 'C.UTF-8'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.199619] (-) TimerEvent: {}
+[0.273925] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.299746] (-) TimerEvent: {}
+[0.347762] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.409129] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.409657] (-) TimerEvent: {}
+[0.433255] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.509791] (-) TimerEvent: {}
+[0.610213] (-) TimerEvent: {}
+[0.620840] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.621303] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.637068] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.658260] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.710327] (-) TimerEvent: {}
+[0.768282] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.806742] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.811283] (-) TimerEvent: {}
+[0.839474] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.864267] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.913514] (-) TimerEvent: {}
+[1.023265] (-) TimerEvent: {}
+[1.055791] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.089230] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.089756] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.092015] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.140470] (-) TimerEvent: {}
+[1.140941] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.241440] (-) TimerEvent: {}
+[1.265057] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.341464] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.341871] (-) TimerEvent: {}
+[1.342158] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.343840] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.348326] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.368261] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.370582] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.371063] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.371943] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.442060] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.442385] (-) TimerEvent: {}
+[1.443270] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.461937] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.520045] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.520335] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.520509] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.520656] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.534265] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.534675] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.534948] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.542545] (-) TimerEvent: {}
+[1.548012] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.642655] (-) TimerEvent: {}
+[1.743257] (-) TimerEvent: {}
+[1.846406] (-) TimerEvent: {}
+[1.886191] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.932055] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.935675] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.942698] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.947857] (-) TimerEvent: {}
+[2.018231] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.018731] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.055787] (-) TimerEvent: {}
+[2.075265] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.076307] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.077618] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.087020] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.155898] (-) TimerEvent: {}
+[2.213373] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.214106] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Found Python3: /usr/local/python/current/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.260423] (-) TimerEvent: {}
+[2.284012] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.284802] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.288481] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.305822] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.360497] (-) TimerEvent: {}
+[2.462845] (-) TimerEvent: {}
+[2.530342] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Found Python3: /usr/local/python/current/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.549318] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.565276] (-) TimerEvent: {}
+[2.665685] (-) TimerEvent: {}
+[2.689699] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.766039] (-) TimerEvent: {}
+[2.852389] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found Python3: /usr/local/python/current/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.866755] (-) TimerEvent: {}
+[2.870508] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Found Python3: /usr/local/python/current/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.958187] (examples_rclcpp_async_client) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.958464] (examples_rclcpp_async_client) StdoutLine: {'line': b'See also "/home/rosdev/ros2_ws/src/build/examples_rclcpp_async_client/CMakeFiles/CMakeOutput.log".\n'}
+[2.958622] (examples_rclcpp_async_client) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[2.958785] (examples_rclcpp_async_client) StderrLine: {'line': b'  By not providing "Findexample_interfaces.cmake" in CMAKE_MODULE_PATH this\n'}
+[2.958917] (examples_rclcpp_async_client) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[2.959041] (examples_rclcpp_async_client) StderrLine: {'line': b'  "example_interfaces", but CMake did not find one.\n'}
+[2.959166] (examples_rclcpp_async_client) StderrLine: {'line': b'\n'}
+[2.959346] (examples_rclcpp_async_client) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[2.959486] (examples_rclcpp_async_client) StderrLine: {'line': b'  "example_interfaces" with any of the following names:\n'}
+[2.959616] (examples_rclcpp_async_client) StderrLine: {'line': b'\n'}
+[2.959745] (examples_rclcpp_async_client) StderrLine: {'line': b'    example_interfacesConfig.cmake\n'}
+[2.959875] (examples_rclcpp_async_client) StderrLine: {'line': b'    example_interfaces-config.cmake\n'}
+[2.960004] (examples_rclcpp_async_client) StderrLine: {'line': b'\n'}
+[2.960133] (examples_rclcpp_async_client) StderrLine: {'line': b'  Add the installation prefix of "example_interfaces" to CMAKE_PREFIX_PATH or\n'}
+[2.960311] (examples_rclcpp_async_client) StderrLine: {'line': b'  set "example_interfaces_DIR" to a directory containing one of the above\n'}
+[2.960458] (examples_rclcpp_async_client) StderrLine: {'line': b'  files.  If "example_interfaces" provides a separate development package or\n'}
+[2.960604] (examples_rclcpp_async_client) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[2.960738] (examples_rclcpp_async_client) StderrLine: {'line': b'\n'}
+[2.960870] (examples_rclcpp_async_client) StderrLine: {'line': b'\x1b[0m\n'}
+[2.967356] (-) TimerEvent: {}
+[2.972781] (examples_rclcpp_async_client) CommandEnded: {'returncode': 1}
+[2.994231] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[2.994833] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'  By not providing "Findexample_interfaces.cmake" in CMAKE_MODULE_PATH this\n'}
+[2.995031] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[2.995227] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'  "example_interfaces", but CMake did not find one.\n'}
+[2.995404] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'\n'}
+[2.995572] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[2.995733] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'  "example_interfaces" with any of the following names:\n'}
+[2.995903] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'\n'}
+[2.996062] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'    example_interfacesConfig.cmake\n'}
+[3.002645] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'    example_interfaces-config.cmake\n'}
+[3.002926] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'\n'}
+[3.003163] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'  Add the installation prefix of "example_interfaces" to CMAKE_PREFIX_PATH or\n'}
+[3.012614] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'  set "example_interfaces_DIR" to a directory containing one of the above\n'}
+[3.012788] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'  files.  If "example_interfaces" provides a separate development package or\n'}
+[3.012939] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[3.013096] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'\n'}
+[3.013264] (examples_rclcpp_minimal_action_server) StderrLine: {'line': b'\x1b[0m\n'}
+[3.013411] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.013571] (examples_rclcpp_minimal_action_server) StdoutLine: {'line': b'See also "/home/rosdev/ros2_ws/src/build/examples_rclcpp_minimal_action_server/CMakeFiles/CMakeOutput.log".\n'}
+[3.013722] (examples_rclcpp_minimal_action_server) CommandEnded: {'returncode': 1}
+[3.061264] (examples_rclcpp_async_client) JobEnded: {'identifier': 'examples_rclcpp_async_client', 'rc': 1}
+[3.063051] (examples_rclcpp_minimal_action_server) JobEnded: {'identifier': 'examples_rclcpp_minimal_action_server', 'rc': 'SIGINT'}
+[3.068236] (-) TimerEvent: {}
+[3.168626] (-) TimerEvent: {}
+[3.171321] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.197914] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[3.269172] (-) TimerEvent: {}
+[3.282000] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[3.282479] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'  By not providing "Findexample_interfaces.cmake" in CMAKE_MODULE_PATH this\n'}
+[3.282772] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[3.283040] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'  "example_interfaces", but CMake did not find one.\n'}
+[3.283809] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'\n'}
+[3.284071] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'  Could not find a package configuration file provided by\n'}
+[3.284260] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'  "example_interfaces" with any of the following names:\n'}
+[3.284440] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'\n'}
+[3.284609] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'    example_interfacesConfig.cmake\n'}
+[3.284769] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'    example_interfaces-config.cmake\n'}
+[3.284940] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'\n'}
+[3.285106] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'  Add the installation prefix of "example_interfaces" to CMAKE_PREFIX_PATH or\n'}
+[3.285285] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'  set "example_interfaces_DIR" to a directory containing one of the above\n'}
+[3.285476] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'  files.  If "example_interfaces" provides a separate development package or\n'}
+[3.285652] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[3.285821] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'\n'}
+[3.285973] (examples_rclcpp_minimal_action_client) StderrLine: {'line': b'\x1b[0m\n'}
+[3.293968] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.294286] (examples_rclcpp_minimal_action_client) StdoutLine: {'line': b'See also "/home/rosdev/ros2_ws/src/build/examples_rclcpp_minimal_action_client/CMakeFiles/CMakeOutput.log".\n'}
+[3.313289] (examples_rclcpp_minimal_action_client) JobEnded: {'identifier': 'examples_rclcpp_minimal_action_client', 'rc': 'SIGINT'}
+[3.317042] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.369273] (-) TimerEvent: {}
+[3.421702] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[3.435950] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.460483] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.469439] (-) TimerEvent: {}
+[3.497847] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.549870] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.569617] (-) TimerEvent: {}
+[3.654691] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.660003] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.669689] (-) TimerEvent: {}
+[3.770008] (-) TimerEvent: {}
+[3.842195] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[3.871449] (-) TimerEvent: {}
+[3.891991] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[3.960517] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.971546] (-) TimerEvent: {}
+[3.978331] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[4.072249] (-) TimerEvent: {}
+[4.132360] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[4.137271] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.172357] (-) TimerEvent: {}
+[4.272683] (-) TimerEvent: {}
+[4.293562] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.297759] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.372795] (-) TimerEvent: {}
+[4.445368] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.473249] (-) TimerEvent: {}
+[4.573774] (-) TimerEvent: {}
+[4.614979] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[4.619320] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.619746] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/rosdev/ros2_ws/src/examples/rclcpp/executors/cbg_executor/include\n'}
+[4.619933] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.624024] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[4.624363] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[4.626864] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.632892] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.633165] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.634752] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.641066] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.673899] (-) TimerEvent: {}
+[4.677340] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Generating done\n'}
+[4.691548] (examples_rclcpp_cbg_executor) StdoutLine: {'line': b'-- Build files have been written to: /home/rosdev/ros2_ws/src/build/examples_rclcpp_cbg_executor\n'}
+[4.716441] (examples_rclcpp_cbg_executor) JobEnded: {'identifier': 'examples_rclcpp_cbg_executor', 'rc': 'SIGINT'}
+[4.729867] (examples_rclcpp_minimal_client) JobSkipped: {'identifier': 'examples_rclcpp_minimal_client'}
+[4.729989] (examples_rclcpp_minimal_composition) JobSkipped: {'identifier': 'examples_rclcpp_minimal_composition'}
+[4.730048] (examples_rclcpp_minimal_publisher) JobSkipped: {'identifier': 'examples_rclcpp_minimal_publisher'}
+[4.730099] (examples_rclcpp_minimal_service) JobSkipped: {'identifier': 'examples_rclcpp_minimal_service'}
+[4.730174] (examples_rclcpp_minimal_subscriber) JobSkipped: {'identifier': 'examples_rclcpp_minimal_subscriber'}
+[4.730269] (examples_rclcpp_minimal_timer) JobSkipped: {'identifier': 'examples_rclcpp_minimal_timer'}
+[4.730315] (examples_rclcpp_multithreaded_executor) JobSkipped: {'identifier': 'examples_rclcpp_multithreaded_executor'}
+[4.730361] (examples_rclcpp_wait_set) JobSkipped: {'identifier': 'examples_rclcpp_wait_set'}
+[4.730404] (examples_rclpy_executors) JobSkipped: {'identifier': 'examples_rclpy_executors'}
+[4.730447] (examples_rclpy_guard_conditions) JobSkipped: {'identifier': 'examples_rclpy_guard_conditions'}
+[4.730490] (examples_rclpy_minimal_action_client) JobSkipped: {'identifier': 'examples_rclpy_minimal_action_client'}
+[4.730533] (examples_rclpy_minimal_action_server) JobSkipped: {'identifier': 'examples_rclpy_minimal_action_server'}
+[4.730576] (examples_rclpy_minimal_client) JobSkipped: {'identifier': 'examples_rclpy_minimal_client'}
+[4.730621] (examples_rclpy_minimal_publisher) JobSkipped: {'identifier': 'examples_rclpy_minimal_publisher'}
+[4.730664] (examples_rclpy_minimal_service) JobSkipped: {'identifier': 'examples_rclpy_minimal_service'}
+[4.730706] (examples_rclpy_minimal_subscriber) JobSkipped: {'identifier': 'examples_rclpy_minimal_subscriber'}
+[4.730749] (examples_rclpy_pointcloud_publisher) JobSkipped: {'identifier': 'examples_rclpy_pointcloud_publisher'}
+[4.730793] (launch_testing_examples) JobSkipped: {'identifier': 'launch_testing_examples'}
+[4.730836] (-) EventReactorShutdown: {}
