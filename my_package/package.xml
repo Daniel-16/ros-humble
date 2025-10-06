@@ -3,8 +3,8 @@
 <package format="3">
   <name>my_package</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="danieloloruntoba681@gmail.com">rosdev</maintainer>
+  <description>ROS2 client libraries</description>
+  <maintainer email="danieloloruntoba681@gmail.com">Daniel Toba</maintainer>
   <license>Apache-2.0</license>
 
   <test_depend>ament_copyright</test_depend>
