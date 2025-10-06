@@ -1,0 +1,36 @@
+[0.064s] Invoking command in '/home/rosdev/ros2_ws/build/examples_rclcpp_async_client': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rosdev/ros2_ws/src/examples/rclcpp/services/async_client -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rosdev/ros2_ws/install/examples_rclcpp_async_client
+[0.639s] -- The C compiler identification is GNU 11.4.0
+[1.021s] -- The CXX compiler identification is GNU 11.4.0
+[1.059s] -- Detecting C compiler ABI info
+[1.496s] -- Detecting C compiler ABI info - done
+[1.515s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.520s] -- Detecting C compile features
+[1.544s] -- Detecting C compile features - done
+[1.545s] -- Detecting CXX compiler ABI info
+[1.898s] -- Detecting CXX compiler ABI info - done
+[1.927s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.929s] -- Detecting CXX compile features
+[1.932s] -- Detecting CXX compile features - done
+[1.949s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.421s] -- Found Python3: /usr/local/python/current/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.774s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.933s] [31mCMake Error at CMakeLists.txt:14 (find_package):
+[2.934s]   By not providing "Findexample_interfaces.cmake" in CMAKE_MODULE_PATH this
+[2.936s]   project has asked CMake to find a package configuration file provided by
+[2.936s]   "example_interfaces", but CMake did not find one.
+[2.936s] 
+[2.936s]   Could not find a package configuration file provided by
+[2.936s]   "example_interfaces" with any of the following names:
+[2.940s] 
+[2.940s]     example_interfacesConfig.cmake
+[2.941s]     example_interfaces-config.cmake
+[2.941s] 
+[2.941s]   Add the installation prefix of "example_interfaces" to CMAKE_PREFIX_PATH or
+[2.941s]   set "example_interfaces_DIR" to a directory containing one of the above
+[2.941s]   files.  If "example_interfaces" provides a separate development package or
+[2.941s]   SDK, be sure it has been installed.
+[2.942s] 
+[2.942s] [0m
+[2.942s] -- Configuring incomplete, errors occurred!
+[2.942s] See also "/home/rosdev/ros2_ws/build/examples_rclcpp_async_client/CMakeFiles/CMakeOutput.log".
+[2.963s] Invoked command in '/home/rosdev/ros2_ws/build/examples_rclcpp_async_client' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/rosdev/ros2_ws/src/examples/rclcpp/services/async_client -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rosdev/ros2_ws/install/examples_rclcpp_async_client

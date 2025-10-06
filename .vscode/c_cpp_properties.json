@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/opt/ros/humble/include/**",
+        "/home/rosdev/ros2_ws/src/examples/rclcpp/composition/minimal_composition/include/**",
+        "/home/rosdev/ros2_ws/src/examples/rclcpp/executors/cbg_executor/include/**",
+        "/home/rosdev/ros2_ws/src/examples/rclcpp/wait_set/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
