@@ -13,7 +13,7 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='rosdev',
+    maintainer='Daniel Toba',
     maintainer_email='danieloloruntoba681@gmail.com',
     description='ROS2 service client libraries',
     license='Apache-2.0',
@@ -24,6 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'service = py_srvcli.service_member_function:main',
+            'client = py_srvcli.client_member_function:main',
         ],
     },
 )
