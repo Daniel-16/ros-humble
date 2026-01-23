@@ -1,0 +1,474 @@
+<?xml version="1.0"?>
+<robot name="quadcopter_drone">
+
+  <!-- ========================================== -->
+  <!-- MATERIALS -->
+  <!-- ========================================== -->
+  <material name="carbon_fiber">
+    <color rgba="0.15 0.15 0.15 1"/>
+  </material>
+  <material name="plastic_red">
+    <color rgba="0.8 0.1 0.1 1"/>
+  </material>
+  <material name="plastic_orange">
+    <color rgba="1.0 0.5 0.0 1"/>
+  </material>
+  <material name="plastic_black">
+    <color rgba="0.1 0.1 0.1 1"/>
+  </material>
+  <material name="metal_silver">
+    <color rgba="0.8 0.8 0.8 1"/>
+  </material>
+  <material name="metal_gold">
+    <color rgba="0.8 0.6 0.2 1"/>
+  </material>
+  <material name="battery_blue">
+    <color rgba="0.0 0.2 0.8 1"/>
+  </material>
+
+  <!-- ========================================== -->
+  <!-- BASE LINK (Chassis + Battery + Electronics) -->
+  <!-- ========================================== -->
+  <link name="base_link">
+    <!-- Main Center Plate -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.15 0.15 0.02"/>
+      </geometry>
+      <material name="carbon_fiber"/>
+    </visual>
+    
+    <!-- Top Battery Pack (Visual Only) -->
+    <visual>
+      <origin xyz="0 0 0.03" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.10 0.06 0.03"/>
+      </geometry>
+      <material name="battery_blue"/>
+    </visual>
+
+    <!-- Flight Controller Stack (Visual Only) -->
+    <visual>
+      <origin xyz="0 0 0.015" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.04 0.04 0.01"/>
+      </geometry>
+      <material name="metal_silver"/>
+    </visual>
+
+    <!-- Collision Box -->
+    <collision>
+      <geometry>
+        <box size="0.15 0.15 0.08"/>
+      </geometry>
+    </collision>
+    
+    <!-- Inertia (Placeholder for Physics) -->
+    <inertial>
+      <mass value="1.5"/>
+      <inertia ixx="0.03" ixy="0.0" ixz="0.0" iyy="0.03" iyz="0.0" izz="0.06"/>
+    </inertial>
+  </link>
+
+  <!-- ========================================== -->
+  <!-- MACRO-LIKE DEFINITIONS (Manual Expansion)  -->
+  <!-- ========================================== -->
+  
+  <!-- FRONT RIGHT (Arm + Motor + Prop) -->
+  <link name="fr_arm">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.01"/>
+      </geometry>
+      <material name="carbon_fiber"/>
+      <origin rpy="0 1.5708 0" xyz="0.1 0 0"/> 
+    </visual>
+    <!-- Motor Mount Visual -->
+    <visual>
+      <geometry>
+        <box size="0.04 0.04 0.01"/>
+      </geometry>
+      <material name="plastic_black"/>
+      <origin rpy="0 0 0" xyz="0.2 0 0"/>
+    </visual>
+    <!-- Landing Leg Visual -->
+    <visual>
+      <geometry>
+        <cylinder length="0.08" radius="0.005"/>
+      </geometry>
+      <material name="plastic_black"/>
+      <origin rpy="0 0 0" xyz="0.2 0 -0.04"/>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="base_to_fr_arm" type="fixed">
+    <parent link="base_link"/>
+    <child link="fr_arm"/>
+    <origin xyz="0 0 0" rpy="0 0 0.7854"/> <!-- 45 degrees -->
+  </joint>
+
+  <link name="fr_motor">
+    <!-- Stator/Base -->
+    <visual>
+      <geometry>
+        <cylinder length="0.015" radius="0.018"/>
+      </geometry>
+      <material name="metal_silver"/>
+      <origin xyz="0 0 0.0075"/>
+    </visual>
+    <!-- Bell/Top -->
+    <visual>
+      <geometry>
+        <cylinder length="0.015" radius="0.019"/>
+      </geometry>
+      <material name="metal_gold"/>
+      <origin xyz="0 0 0.02"/>
+    </visual>
+    <inertial>
+      <mass value="0.05"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="fr_arm_to_motor" type="continuous">
+    <parent link="fr_arm"/>
+    <child link="fr_motor"/>
+    <origin xyz="0.2 0 0.005" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="fr_prop">
+    <!-- Blade -->
+    <visual>
+      <geometry>
+        <cylinder length="0.005" radius="0.13"/>
+      </geometry>
+      <material name="plastic_orange"/>
+    </visual>
+    <!-- Prop Nut/Cap -->
+    <visual>
+      <geometry>
+         <sphere radius="0.01"/>
+      </geometry>
+      <material name="metal_silver"/>
+      <origin xyz="0 0 0.005"/>
+    </visual>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="fr_motor_to_prop" type="fixed">
+    <parent link="fr_motor"/>
+    <child link="fr_prop"/>
+    <origin xyz="0 0 0.03" rpy="0 0 0"/>
+  </joint>
+
+
+  <!-- FRONT LEFT (Arm + Motor + Prop) -->
+  <link name="fl_arm">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.01"/>
+      </geometry>
+      <material name="carbon_fiber"/>
+      <origin rpy="0 1.5708 0" xyz="0.1 0 0"/>
+    </visual>
+    <visual>
+      <geometry>
+        <box size="0.04 0.04 0.01"/>
+      </geometry>
+      <material name="plastic_black"/>
+      <origin rpy="0 0 0" xyz="0.2 0 0"/>
+    </visual>
+    <visual>
+      <geometry>
+        <cylinder length="0.08" radius="0.005"/>
+      </geometry>
+      <material name="plastic_black"/>
+      <origin rpy="0 0 0" xyz="0.2 0 -0.04"/>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="base_to_fl_arm" type="fixed">
+    <parent link="base_link"/>
+    <child link="fl_arm"/>
+    <origin xyz="0 0 0" rpy="0 0 2.3562"/> <!-- 135 degrees -->
+  </joint>
+
+  <link name="fl_motor">
+    <visual>
+      <geometry>
+        <cylinder length="0.015" radius="0.018"/>
+      </geometry>
+      <material name="metal_silver"/>
+      <origin xyz="0 0 0.0075"/>
+    </visual>
+    <visual>
+      <geometry>
+        <cylinder length="0.015" radius="0.019"/>
+      </geometry>
+      <material name="metal_gold"/>
+      <origin xyz="0 0 0.02"/>
+    </visual>
+    <inertial>
+      <mass value="0.05"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="fl_arm_to_motor" type="continuous">
+    <parent link="fl_arm"/>
+    <child link="fl_motor"/>
+    <origin xyz="0.2 0 0.005" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="fl_prop">
+    <visual>
+      <geometry>
+        <cylinder length="0.005" radius="0.13"/>
+      </geometry>
+      <material name="plastic_orange"/>
+    </visual>
+    <visual>
+      <geometry>
+         <sphere radius="0.01"/>
+      </geometry>
+      <material name="metal_silver"/>
+      <origin xyz="0 0 0.005"/>
+    </visual>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="fl_motor_to_prop" type="fixed">
+    <parent link="fl_motor"/>
+    <child link="fl_prop"/>
+    <origin xyz="0 0 0.03" rpy="0 0 0"/>
+  </joint>
+
+
+  <!-- REAR RIGHT (Arm + Motor + Prop) -->
+  <link name="rr_arm">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.01"/>
+      </geometry>
+      <material name="carbon_fiber"/>
+      <origin rpy="0 1.5708 0" xyz="0.1 0 0"/>
+    </visual>
+    <visual>
+      <geometry>
+        <box size="0.04 0.04 0.01"/>
+      </geometry>
+      <material name="plastic_black"/>
+      <origin rpy="0 0 0" xyz="0.2 0 0"/>
+    </visual>
+    <visual>
+      <geometry>
+        <cylinder length="0.08" radius="0.005"/>
+      </geometry>
+      <material name="plastic_black"/>
+      <origin rpy="0 0 0" xyz="0.2 0 -0.04"/>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="base_to_rr_arm" type="fixed">
+    <parent link="base_link"/>
+    <child link="rr_arm"/>
+    <origin xyz="0 0 0" rpy="0 0 -0.7854"/> <!-- -45 degrees -->
+  </joint>
+
+  <link name="rr_motor">
+    <visual>
+      <geometry>
+        <cylinder length="0.015" radius="0.018"/>
+      </geometry>
+      <material name="metal_silver"/>
+      <origin xyz="0 0 0.0075"/>
+    </visual>
+    <visual>
+      <geometry>
+        <cylinder length="0.015" radius="0.019"/>
+      </geometry>
+      <material name="metal_gold"/>
+      <origin xyz="0 0 0.02"/>
+    </visual>
+    <inertial>
+      <mass value="0.05"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="rr_arm_to_motor" type="continuous">
+    <parent link="rr_arm"/>
+    <child link="rr_motor"/>
+    <origin xyz="0.2 0 0.005" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="rr_prop">
+    <visual>
+      <geometry>
+        <cylinder length="0.005" radius="0.13"/>
+      </geometry>
+      <material name="plastic_black"/> <!-- Black for rear -->
+    </visual>
+    <visual>
+      <geometry>
+         <sphere radius="0.01"/>
+      </geometry>
+      <material name="metal_silver"/>
+      <origin xyz="0 0 0.005"/>
+    </visual>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="rr_motor_to_prop" type="fixed">
+    <parent link="rr_motor"/>
+    <child link="rr_prop"/>
+    <origin xyz="0 0 0.03" rpy="0 0 0"/>
+  </joint>
+
+
+  <!-- REAR LEFT (Arm + Motor + Prop) -->
+  <link name="rl_arm">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.01"/>
+      </geometry>
+      <material name="carbon_fiber"/>
+      <origin rpy="0 1.5708 0" xyz="0.1 0 0"/>
+    </visual>
+    <visual>
+      <geometry>
+        <box size="0.04 0.04 0.01"/>
+      </geometry>
+      <material name="plastic_black"/>
+      <origin rpy="0 0 0" xyz="0.2 0 0"/>
+    </visual>
+    <visual>
+      <geometry>
+        <cylinder length="0.08" radius="0.005"/>
+      </geometry>
+      <material name="plastic_black"/>
+      <origin rpy="0 0 0" xyz="0.2 0 -0.04"/>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.001" ixy="0" ixz="0" iyy="0.001" iyz="0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="base_to_rl_arm" type="fixed">
+    <parent link="base_link"/>
+    <child link="rl_arm"/>
+    <origin xyz="0 0 0" rpy="0 0 -2.3562"/> <!-- -135 degrees -->
+  </joint>
+
+  <link name="rl_motor">
+    <visual>
+      <geometry>
+        <cylinder length="0.015" radius="0.018"/>
+      </geometry>
+      <material name="metal_silver"/>
+      <origin xyz="0 0 0.0075"/>
+    </visual>
+    <visual>
+      <geometry>
+        <cylinder length="0.015" radius="0.019"/>
+      </geometry>
+      <material name="metal_gold"/>
+      <origin xyz="0 0 0.02"/>
+    </visual>
+    <inertial>
+      <mass value="0.05"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="rl_arm_to_motor" type="continuous">
+    <parent link="rl_arm"/>
+    <child link="rl_motor"/>
+    <origin xyz="0.2 0 0.005" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <link name="rl_prop">
+    <visual>
+      <geometry>
+        <cylinder length="0.005" radius="0.13"/>
+      </geometry>
+      <material name="plastic_black"/> <!-- Black for rear -->
+    </visual>
+    <visual>
+      <geometry>
+         <sphere radius="0.01"/>
+      </geometry>
+      <material name="metal_silver"/>
+      <origin xyz="0 0 0.005"/>
+    </visual>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="rl_motor_to_prop" type="fixed">
+    <parent link="rl_motor"/>
+    <child link="rl_prop"/>
+    <origin xyz="0 0 0.03" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ========================================== -->
+  <!-- SENSORS (Camera) -->
+  <!-- ========================================== -->
+  <link name="camera_link">
+    <!-- Camera Body -->
+    <visual>
+      <geometry>
+        <box size="0.03 0.05 0.03"/>
+      </geometry>
+      <material name="plastic_red"/>
+    </visual>
+    <!-- Camera Lens -->
+    <visual>
+      <origin xyz="0.015 0 0" rpy="0 1.5708 0"/>
+      <geometry>
+        <cylinder length="0.01" radius="0.015"/>
+      </geometry>
+      <material name="plastic_black"/>
+    </visual>
+    <inertial>
+      <mass value="0.05"/>
+      <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001"/>
+    </inertial>
+  </link>
+
+  <joint name="base_to_camera" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.08 0 0.01" rpy="0 0 0"/>
+  </joint>
+
+</robot>
